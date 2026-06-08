@@ -779,6 +779,26 @@ body {
   color: rgba(245, 230, 211, 0.7);
 }
 
+/* REVISI DETAIL */
+
+.revisi-detail {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 77, 77, 0.2);
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.revisi-detail p {
+  margin-bottom: 12px;
+  color: #f5e6d3;
+}
+
+.revisi-detail p:last-child {
+  margin-bottom: 0;
+}
+
 /* LABEL */
 
 .order-container label {
