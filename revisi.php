@@ -12,7 +12,7 @@ $id = $_GET['id'];
 
     <title>Ajukan Revisi</title>
 
-    <link rel="stylesheet" href="css/style.css?v=999">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 
 </head>
 
