@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 html {
@@ -127,7 +127,7 @@ html {
 /* ABOUT  */
 .about-hero-modern {
   height: 100vh;
-  background: url("../images/hero.jpeg") center/cover;
+  background: url('../images/hero.jpeg') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,7 +186,7 @@ html {
 
 .login-page {
   min-height: 100vh;
-  background-image: url("../images/redlogin.jpeg");
+  background-image: url('../images/redlogin.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -194,7 +194,7 @@ html {
 
 .login-left {
   width: 50%;
-  background: url("../images/welcome.jpeg") center/cover;
+  background: url('../images/welcome.jpeg') center/cover;
 }
 
 .login-right {
@@ -451,7 +451,7 @@ body {
 
   background:
     linear-gradient(rgba(79, 71, 71, 0.6), rgba(79, 71, 71, 0.6)),
-    url("../images/hero.jpeg") center/cover;
+    url('../images/hero.jpeg') center/cover;
 
   display: flex;
   align-items: center;
@@ -867,7 +867,7 @@ body {
 
 /* FILE INPUT */
 
-.order-container input[type="file"] {
+.order-container input[type='file'] {
   background: transparent;
 
   border: 2px dashed rgba(255, 77, 77, 0.3);
@@ -995,7 +995,7 @@ body {
 .admin-page {
   background:
     linear-gradient(rgba(79, 71, 71, 0.75), rgba(79, 71, 71, 0.75)),
-    url("../images/blacklogin.jpeg");
+    url('../images/blacklogin.jpeg');
 
   background-size: cover;
   background-position: center;
@@ -1166,7 +1166,7 @@ tr:hover {
   color: green;
 }
 
-/* tos*/
+/* tos */
 .tos-wrapper {
   text-align: center;
 

@@ -4,7 +4,7 @@ session_start();
 
 if (!isset($_SESSION['id_user'])) {
 
-    echo "
+  echo "
 
     <script>
 
@@ -16,7 +16,7 @@ if (!isset($_SESSION['id_user'])) {
 
     ";
 
-    exit;
+  exit;
 }
 
 ?>
@@ -24,83 +24,83 @@ if (!isset($_SESSION['id_user'])) {
 <html>
 
 <head>
-    <title>Order Jasa</title>
-    <link rel="stylesheet" href="css/style.css">
+  <title>Order Jasa</title>
+  <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 
 <body>
 
-    <div class="order-container">
+  <div class="order-container">
 
-        <h2>Form Pemesanan</h2>
+    <h2>Form Pemesanan</h2>
 
-        <form action="proses_order.php" method="POST" enctype="multipart/form-data">
+    <form action="proses_order.php" method="POST" enctype="multipart/form-data">
 
-            <label>Pilih Layanan</label>
-            <select name="layanan" required onchange="ubahForm()" id="layanan">
-                <option value="">-- Pilih Layanan --</option>
-                <option value="Video">Video Editing</option>
-                <option value="Photo">Photo Editing</option>
-            </select>
+      <label>Pilih Layanan</label>
+      <select name="layanan" required onchange="ubahForm()" id="layanan">
+        <option value="">-- Pilih Layanan --</option>
+        <option value="Video">Video Editing</option>
+        <option value="Photo">Photo Editing</option>
+      </select>
 
-            <!-- VIDEO -->
-            <div id="videoForm" style="display:none;">
-                <label>Durasi Video (menit)</label>
-                <input type="number" name="durasi" placeholder="Contoh: 5">
-            </div>
+      <!-- VIDEO -->
+      <div id="videoForm" style="display:none;">
+        <label>Durasi Video (menit)</label>
+        <input type="number" name="durasi" placeholder="Contoh: 5">
+      </div>
 
-            <!-- PHOTO -->
-            <div id="photoForm" style="display:none;">
-                <label>Jumlah Foto</label>
-                <input type="number" name="jumlah_foto" placeholder="Contoh: 10">
-            </div>
+      <!-- PHOTO -->
+      <div id="photoForm" style="display:none;">
+        <label>Jumlah Foto</label>
+        <input type="number" name="jumlah_foto" placeholder="Contoh: 10">
+      </div>
 
-            <label>Nama</label>
-            <input
-                type="text"
-                name="nama"
-                placeholder="Masukkan Nama"
-                required>
+      <label>Nama</label>
+      <input
+        type="text"
+        name="nama"
+        placeholder="Masukkan Nama"
+        required>
 
-            <label>No HP</label>
-            <input type="text" name="hp" placeholder="Masukkan No HP" required>
+      <label>No HP</label>
+      <input type="text" name="hp" placeholder="Masukkan No HP" required>
 
-            <label>Deskripsi Edit</label>
-            <textarea name="deskripsi" placeholder="Contoh: Ingin lebih cerah" required></textarea>
+      <label>Deskripsi Edit</label>
+      <textarea name="deskripsi" placeholder="Contoh: Ingin lebih cerah" required></textarea>
 
-            <!-- FILE -->
-            <label>Upload File (foto/video)</label>
-            <input type="file" name="file">
+      <!-- FILE -->
+      <label>Upload File (foto/video)</label>
+      <input type="file" name="file">
 
-            <!-- LINK -->
-            <label>Link Google Drive (jika perlu)</label>
-            <input type="text" name="link" placeholder="https://drive.google.com/...">
+      <!-- LINK -->
+      <label>Link Google Drive (jika perlu)</label>
+      <input type="text" name="link" placeholder="https://drive.google.com/...">
 
-            <!-- BUTTON -->
-            <button class="btn">Lanjut ke Pembayaran</button>
-            <div class="back-wrapper">
-                <a href="index.php" class="back-home">← Kembali ke Home</a>
-            </div>
+      <!-- BUTTON -->
+      <button class="btn">Lanjut ke Pembayaran</button>
+      <div class="back-wrapper">
+        <a href="index.php" class="back-home">← Kembali ke Home</a>
+      </div>
 
-        </form>
+    </form>
 
-    </div>
+  </div>
 
-    <!-- SCRIPT -->
-    <script>
-        function ubahForm() {
-            var layanan = document.getElementById("layanan").value;
+  <!-- SCRIPT -->
+  <script>
+    function ubahForm() {
+      var layanan = document.getElementById("layanan").value;
 
-            document.getElementById("videoForm").style.display = "none";
-            document.getElementById("photoForm").style.display = "none";
+      document.getElementById("videoForm").style.display = "none";
+      document.getElementById("photoForm").style.display = "none";
 
-            if (layanan == "Video") {
-                document.getElementById("videoForm").style.display = "block";
-            } else if (layanan == "Photo") {
-                document.getElementById("photoForm").style.display = "block";
-            }
-        }
-    </script>
+      if (layanan == "Video") {
+        document.getElementById("videoForm").style.display = "block";
+      } else if (layanan == "Photo") {
+        document.getElementById("photoForm").style.display = "block";
+      }
+    }
+  </script>
 
 </body>
 
